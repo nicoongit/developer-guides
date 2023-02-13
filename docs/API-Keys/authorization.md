@@ -1,4 +1,4 @@
-# Authorizing your application
+# Authorizing your application test
 
 Amadeus for Developers uses `OAuth` to authenticate access requests. `OAuth` generates an `access token` which grants the client permission to access a protected resource. 
 

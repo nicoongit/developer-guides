@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Amadeus for Developers Self-Service APIs Documentation">
+        <meta name="description" content="Explore our glossary of tourism and travel industry terms, featuring key concepts for working with Amadeus Self-Service APIs.">
       
       
         <meta name="author" content="Amadeus for Developers">
@@ -79,6 +79,7 @@
             document.write(`<meta http-equiv="refresh" content="0;url=${redirectUrl}" />`);
         }
     </script>
+    <script src="https://assets.adobedtm.com/602a58ecaec4/a49e2b3b8152/launch-ac8ad8d371c2-staging.min.js"></script>
     
   </head>
   
@@ -1260,6 +1261,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#api-technology" class="md-nav__link">
+    API technology
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1278,6 +1286,8 @@
       
         
           
+        
+      
         
       
         
@@ -1342,6 +1352,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration-guides/hotel-booking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hotel booking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1396,6 +1426,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#api-technology" class="md-nav__link">
+    API technology
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1415,7 +1452,7 @@
 
 
 <h1 id="key-concepts">Key concepts</h1>
-<p>This page provides help with the most common terminology used across Amadeus Self-service APIs.</p>
+<p>This glossary offers guidance on the most common terms used in the tourism and travel industry, ranging from basic concepts to API technical vocabulary. It covers airlines and air travel definitions, as well as topics in hospitality, destination content, and some essential business aspects within the framework of Amadeus for Developers Self-Service offering.</p>
 <h3 id="air-and-trip"><a href="https://developers.amadeus.com/self-service/category/air" target="_blank">Air</a>  and <a href="https://developers.amadeus.com/self-service/category/trip" target="_blank">Trip</a></h3>
 <table>
 <thead>
@@ -1450,6 +1487,14 @@
 <td>Additional services or features offered to enhance the experience of the passengers, such as food, entertainment, Wi-Fi, extra legroom, baggage allowance, frequent flyer programs, and lounge access. They can vary depending on the class of service and the airline/train company.</td>
 </tr>
 <tr>
+<td>ARC Number</td>
+<td>An ARC number is a unique identifier issued by the Airlines Reporting Corporation (ARC) to travel agencies in the USA. Similar to an IATA number, it is required to issue tickets and earn commissions.</td>
+</tr>
+<tr>
+<td>Automatic Ticketing</td>
+<td>Automatic ticketing in flight booking refers to the process of automating ticket issuance, eliminating the need for manual intervention. Some consolidators may require a specific remark in the booking request to enable this process.</td>
+</tr>
+<tr>
 <td>Baggage allowance</td>
 <td>The amount of luggage that a passenger is allowed to carry on a flight without additional charges.</td>
 </tr>
@@ -1466,6 +1511,10 @@
 <td>Fee paid to intermediaries for booking travel-related services, usually a percentage of the total cost.</td>
 </tr>
 <tr>
+<td>Consolidator</td>
+<td>Airline consolidators are wholesalers that partner with airlines to secure negotiated fares and resell tickets to travel agents or consumers. Many airline consolidators also act as host agencies for retail travel agencies or online travel startups that lack an International Air Transport Association (IATA) license to issue tickets. To issue tickets through a consolidator, travel startups must establish commercial agreements with them in their target markets.</td>
+</tr>
+<tr>
 <td>Carrier Code</td>
 <td>2 to 3-character IATA carrier code (IATA table codes).</td>
 </tr>
@@ -1474,8 +1523,20 @@
 <td>Country code following ISO 3166 Alpha-2 standard.</td>
 </tr>
 <tr>
+<td>Delayed Ticketing</td>
+<td>Delayed ticketing allows travel agents to postpone ticket issuance until a specified time instead of issuing tickets immediately after booking. This provides agents with more flexibility to collect payments from travelers and the option to cancel without fees within the allowed timeframe.</td>
+</tr>
+<tr>
 <td>Direct flight</td>
 <td>A flight that goes from one destination to another without any stops in between.</td>
+</tr>
+<tr>
+<td>E-ticketing</td>
+<td>E-ticketing is the digital process of issuing flight tickets, allowing direct issuance and avoiding airline consolidator fees. However, a consolidator can still be contracted for post-ticketing services. In the Self-Service framework, E-ticketing is not available, and all ticket issuance must be done through a consolidator.</td>
+</tr>
+<tr>
+<td>EOS Agreement</td>
+<td>An Extended Ownership Security (EOS) agreement controls how data is shared between different office IDs. Before enabling flight booking in Self-Service, we establish an EOS agreement between you and your consolidator, granting them access to a queue of all bookings you generate in production.</td>
 </tr>
 <tr>
 <td>Fare</td>
@@ -1488,6 +1549,14 @@
 <tr>
 <td>Flight Order Id</td>
 <td>Unique identifier returned by the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders" target="_blank">Flight Create Orders API</a> .</td>
+</tr>
+<tr>
+<td>Full Post Ticketing Capabilities</td>
+<td>Full post-ticketing capabilities include all available post-ticketing actions, such as cancellations, changes, and voiding. These actions are only accessible through Amadeus Web Services (SOAP APIs).</td>
+</tr>
+<tr>
+<td>Full Service Carrier</td>
+<td>A full-service carrier (FSC) is an airline that provides a comprehensive range of services and amenities included in the ticket price.</td>
 </tr>
 <tr>
 <td>GDS (Global Distribution System)</td>
@@ -1506,6 +1575,14 @@
 <td><a href="https://www.icao.int/" target="_blank">International Civil Aviation Organization</a></td>
 </tr>
 <tr>
+<td>Incentives</td>
+<td>Incentives are commission-based bonuses awarded to travel agents for reaching a specific booking volume. They are not available through our Self-Service APIs.</td>
+</tr>
+<tr>
+<td>Instant Ticketing</td>
+<td>Instant ticketing is the process of issuing flight tickets immediately after booking.</td>
+</tr>
+<tr>
 <td>ISO8601 date format</td>
 <td>PnYnMnDTnHnMnS format, e.g. PT2H10M.</td>
 </tr>
@@ -1514,16 +1591,48 @@
 <td>A stopover in a destination en route to the final destination.</td>
 </tr>
 <tr>
+<td>LCC</td>
+<td>A low-cost carrier (LCC), also known as a budget airline, operates with a focus on minimizing costs to offer lower fares compared to traditional full-service carriers. LCC content is not available through the Self-Service APIs.</td>
+</tr>
+<tr>
+<td>Limited Post Ticketing Capabilities</td>
+<td>Limited post-ticketing capabilities mean that only partial modifications can be performed after ticket issuance. For full post-ticketing functionality, you must use Amadeus Web Services (SOAP APIs).</td>
+</tr>
+<tr>
+<td>Light Ticketing</td>
+<td>Light ticketing is a booking method used by low-cost airlines to simplify and streamline ticketing for travel agents. This option is available only through the Enterprise APIs.</td>
+</tr>
+<tr>
 <td>Location Id</td>
 <td>Amadeus-defined identifier that you can see in the search results when querying Self-Service APIs that retrieve information on geographical locations.</td>
+</tr>
+<tr>
+<td>Markups</td>
+<td>A markup is an additional amount added by travel agents to the base fare of a flight ticket to cover operational costs and generate profit. Our APIs allow you to freely set markups on top of airline prices.</td>
+</tr>
+<tr>
+<td>Manual Ticketing</td>
+<td>Manual ticketing requires human intervention to verify, process, and issue tickets. If a booking is not sent to the correct office ID or queue number, manual processing may be necessary. This method is less efficient, more time-consuming, and may incur additional fees from some consolidators.</td>
 </tr>
 <tr>
 <td>Multi-stop flight</td>
 <td>A flight itinerary that includes stops at multiple destinations before reaching the final destination.</td>
 </tr>
 <tr>
+<td>Negotiated Fare</td>
+<td>Negotiated fares, also known as consolidator fares, are special discounted rates that airlines or fare consolidators offer exclusively to authorized travel agents. Access to these fares is restricted to the Enterprise APIs.</td>
+</tr>
+<tr>
+<td>NDC</td>
+<td>NDC (New Distribution Capability) is a travel industry program developed by the International Air Transport Association (IATA) to modernize airline content distribution. It enables travel agents to access richer content and exclusive fares. NDC content is available only through the Enterprise framework.</td>
+</tr>
+<tr>
 <td>Non-stop flight</td>
 <td>A flight that goes from one destination to another without any stops in between.</td>
+</tr>
+<tr>
+<td>Owner Office ID</td>
+<td>The Owner Office ID is a unique identifier assigned to a travel agent to associate bookings with their account. It is created during the implementation process. If working with a consolidator, the Owner Office ID will be linked to them, allowing them access to the bookings you generate.</td>
 </tr>
 <tr>
 <td>Pricing</td>
@@ -1534,6 +1643,30 @@
 <td>A record in a computer reservation system that contains the details of a passenger's itinerary and contact information.</td>
 </tr>
 <tr>
+<td>Post Ticketing Capabilities</td>
+<td>Post-ticketing capabilities include actions performed after a flight ticket has been issued, such as changes or cancellations. In the Self-Service framework, full post-ticketing modifications are not available. You can only cancel a flight using Flight Orders Management if the ticket has not yet been issued.</td>
+</tr>
+<tr>
+<td>Public Fare</td>
+<td>Public fares, also known as published fares, are standard airline rates available to all travel agents. By default, all our APIs return public fares.</td>
+</tr>
+<tr>
+<td>Receiver Office ID</td>
+<td>The Receiver Office ID is a unique identifier for the office responsible for processing and ticketing a booking. If working with a consolidator, they will provide the necessary Receiver Office ID along with any required queue or category numbers.</td>
+</tr>
+<tr>
+<td>Reissue</td>
+<td>Reissuance refers to the process of issuing a new ticket to replace an existing one due to itinerary changes. This service is not available through Self-Service APIs, but some consolidators may offer it for an additional fee.</td>
+</tr>
+<tr>
+<td>Remarks</td>
+<td>In flight booking, remarks are notes added to a Passenger Name Record (PNR) to provide additional booking details. They help ensure all relevant information is captured and communicated effectively. Some consolidators may require specific remarks in the booking request to trigger certain processes.</td>
+</tr>
+<tr>
+<td>Reservation vs. Ticket Issued</td>
+<td>Booking a flight involves two key steps: generating a flight order and issuing the ticket. The first step includes searching for a flight offer, confirming pricing, and generating a Passenger Name Record (PNR). At this stage, a seat is reserved in the airline's inventory, but the booking remains incomplete. Ticket issuance finalizes the booking when the airline receives payment. Until this happens, the reservation is not valid for travel. (For more details, refer to our guide (https://developers.amadeus.com/get-started/create-a-flight-booking-engine-651) on building a flight booking engine.) In the Self-Service framework, ticket issuance requires a consolidator, even if you are a certified travel agent.</td>
+</tr>
+<tr>
 <td>Round-trip</td>
 <td>A trip that includes travel to a destination and then back to the original departure point.</td>
 </tr>
@@ -1542,12 +1675,24 @@
 <td>A map or diagram of the seating layout in the cabin of an aircraft or train. It shows the location of different types of seats, such as exit row, bulkhead seat, aisle seat, window seat. It can be used to choose a seat or to see the availability of seats for a certain flight.</td>
 </tr>
 <tr>
+<td>Self-Service vs. Enterprise API</td>
+<td>Amadeus for Developers offers two solutions tailored to different customer needs: Self-Service and Enterprise. The Self-Service offer is designed for independent developers and startups looking for quick and easy integration with Amadeus APIs. These REST/JSON APIs can be accessed and tested within minutes, with a flexible pay-as-you-go pricing model. The catalog includes categories such as Flights, Destination Experience, Car &amp; Transfers, Market Insights, Hotels, and Itinerary Management. The Enterprise offer provides access to the full Amadeus API catalog (REST/JSON and SOAP/XML) and is tailored for companies with scaling needs and leading brands in the travel industry. Enterprise API customers receive dedicated support from account managers and benefit from a customized pricing scheme. Access to Enterprise APIs is granted under specific conditions.</td>
+</tr>
+<tr>
+<td>TDIS</td>
+<td>The Travel Industry Designator Service (TIDS) is a program by the International Air Transport Association (IATA) that assigns a unique identification code to travel agents and sales intermediaries. This code facilitates recognition and identification of travel sellers. However, a TIDS code alone does not grant the ability to issue bookings independently.</td>
+</tr>
+<tr>
 <td>Ticketing</td>
 <td>The process of issuing a travel document, typically a paper or electronic ticket, that confirms that a passenger has purchased a seat on a flight, train, bus, or other form of transportation. It can be refundable or non-refundable, one-way or round-trip, and open-jaw.</td>
 </tr>
 <tr>
 <td>Travel Classes</td>
 <td>Differentiation of service level and amenities offered to passengers on an aircraft or train, like first class, business class, economy class.</td>
+</tr>
+<tr>
+<td>Queuing</td>
+<td>Queuing involves assigning a booking to a specific queue within a consolidator’s ticketing system. The consolidator may provide a queue number that must be included in the booking request for proper processing.</td>
 </tr>
 </tbody>
 </table>
@@ -1576,20 +1721,31 @@
 </thead>
 <tbody>
 <tr>
-<td>Avuxi</td>
-<td>Amadeus' data provider on locations popularity.</td>
-</tr>
-<tr>
 <td>Activity Id</td>
 <td><a href="https://developers.amadeus.com/self-service/category/destination-content/api-doc/tours-and-activities/api-reference" target="_blank">Tours and Activities  API</a>  returns a unique activity Id along with the activity name, short description, geolocation, customer rating, image, price and deep link to the provider page to complete the booking.</td>
 </tr>
 <tr>
-<td>GeoSure</td>
-<td>Amadeus's provider od data on locations crime rate, health and economic data, official travel alerts, local reporting and a variety of other sources.</td>
+<td>Metasearch Engine</td>
+<td>Metasearch engines compile fare and availability data from multiple travel agencies and airlines. They operate on an affiliate model, earning commissions based on the referral volume they generate for specific providers.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="api-technology">API technology</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REST APIs</td>
+<td>REST (Representational State Transfer) APIs facilitate communication with web services using standard HTTP methods such as GET and POST. These APIs enable efficient data exchange, typically in lightweight formats like JSON. Our Self-Service catalog exclusively supports REST APIs.</td>
 </tr>
 <tr>
-<td>GeoSure GeoSafeScores</td>
-<td>Algorithm that analyzes crime, health and economic data, official travel alerts, local reporting and a variety of other sources.</td>
+<td>SOAP APIs</td>
+<td>SOAP (Simple Object Access Protocol) APIs use XML for structured message exchange, adhering to strict protocols that ensure security, reliability, and interoperability. These APIs provide built-in authentication and error-handling mechanisms. SOAP APIs are available exclusively through our Enterprise Web Services.</td>
 </tr>
 </tbody>
 </table>
@@ -1599,7 +1755,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 27, 2025</span>
       
     
   </small>
@@ -1666,138 +1822,8 @@
         
       </main>
       
-        <footer class="md-footer">
-  
+    <script type="text/javascript">_satellite.pageBottom();</script>
     
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../faq/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                FAQ
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../migration-guides/" class="md-footer__link md-footer__link--next" aria-label="Next: Migration guides">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Migration guides
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright © Amadeus IT Group S.A.
-    </div>
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-        <div class="md-social">
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://github.com/amadeus4dev" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://stackoverflow.com/questions/tagged/amadeus" target="_blank" rel="noopener" title="stackoverflow.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M290.7 311 95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://www.youtube.com/@amadeusfordevelopers8592" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://discord.com/invite/cVrFBqx" target="_blank" rel="noopener" title="discord.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://twitter.com/amadeus4dev" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9L389.2 48zm-24.8 373.8h39.1L151.1 88h-42l255.3 333.8z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://www.linkedin.com/showcase/amadeus-for-developers" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
